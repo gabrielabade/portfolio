@@ -364,6 +364,15 @@ span {
     transform: scale(1.02);
 }
 
+.services-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35rem;
+    height: 45rem;
+}
+
 .services-box i {
     font-size: 7rem;
     color: var(--main-color);
