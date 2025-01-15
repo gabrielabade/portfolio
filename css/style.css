@@ -113,6 +113,7 @@ body {
     display: none;
 }
 
+
 section {
     min-height: 100vh;
     padding: 10rem 7% 2rem;
@@ -408,17 +409,16 @@ span {
 
 .portfolio-box img {
     width: 100%;
-    transition: .5s ease;
     filter: grayscale(100%);
     /* Aplica o efeito de escala de cinza */
     transition: filter 0.3s ease-in-out;
     /* Suaviza a transição */
+    transition: .5s ease;
 }
 
 .portfolio-box:hover img {
+    filter: grayscale(2%);/* Remove o efeito de escala de cinza ao passar o mouse */
     transform: scale(1.1);
-    filter: grayscale(2%);
-    /* Remove o efeito de escala de cinza ao passar o mouse */
 }
 
 .portfolio-box .portfolio-layer {
@@ -427,7 +427,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .5), var(--main-color));
     color: var(--white-color);
     display: flex;
     justify-content: center;
