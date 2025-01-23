@@ -1151,7 +1151,7 @@ img {
 
 @media (max-width: 767px) {
     .portfolio-item {
-        width: 90%;
+        width: 100%;
         /* Aumenta a largura no mobile */
         height: auto;
         /* Permite altura automática para manter a proporção */
