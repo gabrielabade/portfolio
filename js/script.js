@@ -19,7 +19,7 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -28,15 +28,15 @@ window.onscroll = () => {
     });
 
 
-/*========== sticky navbar ==========*/
-let header = document.querySelector('.header');
+    /*========== sticky navbar ==========*/
+    let header = document.querySelector('.header');
 
-header.classList.toggle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
 
 
-/*========== remove menu icon navbar when click navbar link (scroll) ==========*/
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
+    /*========== remove menu icon navbar when click navbar link (scroll) ==========*/
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 
 };
 
@@ -48,12 +48,12 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     grabCursor: true,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
 
@@ -82,25 +82,53 @@ ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { ori
 
 /* form envio dos dados para o whatsapp  */
 function sendToWhatsApp() {
-        const phoneNumber = "5548991056014"; 
+    const phoneNumber = "5548991056014";
 
-        // Obter os valores do formulário
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const phone = document.getElementById("phone").value;
-        const subject = document.getElementById("subject").value;
-        const message = document.getElementById("message").value;
+    // Obter os valores do formulário
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
 
-        // Construir a mensagem
-        const whatsappMessage = `Olá! Meu nome é ${name}.
+    // Construir a mensagem
+    const whatsappMessage = `Olá! Meu nome é ${name}.
 Email: ${email}
 Telefone: ${phone}
 Assunto: ${subject}
 Mensagem: ${message}`;
 
-        // Codificar a mensagem para uso no link
-        const encodedMessage = encodeURIComponent(whatsappMessage);
+    // Codificar a mensagem para uso no link
+    const encodedMessage = encodeURIComponent(whatsappMessage);
 
-        // Redirecionar para o WhatsApp com a mensagem
-        window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
-    }
+    // Redirecionar para o WhatsApp com a mensagem
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+}
+/* ==== carrossel para cada categoria de projetos ====*/
+const projectSwipers = document.querySelectorAll('.portfolio-box.mySwiper');
+
+projectSwipers.forEach(swiperContainer => {
+    new Swiper(swiperContainer, {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: swiperContainer.querySelector('.swiper-pagination'),
+            clickable: true
+        },
+        navigation: {
+            nextEl: swiperContainer.querySelector('.swiper-button-next'),
+            prevEl: swiperContainer.querySelector('.swiper-button-prev')
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    });
+});
