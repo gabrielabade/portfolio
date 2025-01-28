@@ -431,8 +431,10 @@ span {
 }
 
 .swiper-slide {
-    display: flex;
-    justify-content: center;
+    width: auto;
+    /* Allow the slides to grow/shrink based on container */
+    flex-shrink: 0;
+    /* Prevent shrinking */
 }
 
 .portfolio-box img {
@@ -666,7 +668,9 @@ span {
 
 /* Garantindo que os slides fiquem centralizados */
 .portfolio-carousel .swiper-wrapper {
-    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    /* Ensure slides are not wrapping */
 }
 
 .swiper-pagination-bullet {
