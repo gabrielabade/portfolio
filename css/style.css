@@ -119,6 +119,10 @@ section {
     padding: 10rem 7% 2rem;
 }
 
+section .testimonial-container {
+    min-height: 10vh !important;
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -404,7 +408,7 @@ span {
 
 .portfolio {
     min-height: auto;
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
 }
 
 .portfolio h2 {
@@ -545,6 +549,7 @@ span {
 }
 
 .category-title {
+    margin-top: 1rem;
     font-size: 2.6rem;
     color: var(--text-color);
     text-align: center;
@@ -594,7 +599,7 @@ span {
 }
 
 .portfolio-content {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .portfolio-content.swiper-wrapper {
@@ -611,7 +616,7 @@ span {
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     width: 350px;
-    height: 450px;
+    height: 450px
 }
 
 .portfolio-item:hover {
@@ -700,7 +705,7 @@ span {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 5rem 1rem;
+    padding: 1rem;
 }
 
 .testimonial-container .testimonial-wrapper {
@@ -711,7 +716,7 @@ span {
 }
 
 .testimonial-wrapper .testimonial-box {
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 2rem;
     overflow: hidden;
 }
@@ -770,7 +775,7 @@ span {
 
 .contact {
     min-height: auto;
-    padding-bottom: 7rem;
+    padding-bottom: 1rem;
 }
 
 .contact h2 {
@@ -1098,7 +1103,7 @@ span {
     }
 
     .testimonial-container .testimonial-wrapper {
-        padding: 5rem 0;
+        padding: 1rem 0;
     }
 
     .testimonial-content .testimonial-slide {
