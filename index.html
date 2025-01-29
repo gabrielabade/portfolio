@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Gabriela Bade</title>
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Definições de cache para otimização -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
 </head>
 
 <body>
@@ -28,775 +31,793 @@
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Olá, eu sou</h3>
-            <h1>Gabriela Bade</h1>
-            <p>
-                Desenvolvedora web com foco em soluções criativas e funcionais.
-                Transformo ideias em experiências digitais envolventes e responsivas.
-            </p>
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Olá, eu sou</h3>
+                <h1>Gabriela Bade</h1>
+                <p>
+                    Desenvolvedora web com foco em soluções criativas e funcionais.
+                    Transformo ideias em experiências digitais envolventes e responsivas.
+                </p>
 
-            <div class="social-media">
-                <a href="https://github.com/gabrielabade" target="_blank" title="GitHub"><i
-                        class='bx bxl-github'></i></a>
+                <div class="social-media">
+                    <a href="https://github.com/gabrielabade" target="_blank" title="GitHub"><i
+                            class='bx bxl-github'></i></a>
 
-                <a href="https://linkedin.com/in/gabriela-bade" target="_blank" title="LinkedIn"><i
-                        class='bx bxl-linkedin'></i></a>
+                    <a href="https://linkedin.com/in/gabriela-bade" target="_blank" title="LinkedIn"><i
+                            class='bx bxl-linkedin'></i></a>
 
-                <a href="https://wa.me/5548991056014" target="_blank" title="WhatsApp"><i
-                        class='bx bxl-whatsapp'></i></a>
+                    <a href="https://wa.me/5548991056014" target="_blank" title="WhatsApp"><i
+                            class='bx bxl-whatsapp'></i></a>
 
-                <a href="mailto:gabriela.bade@hotmail.com" target="_blank" title="Email"><i
-                        class='bx bx-envelope'></i></a>
+                    <a href="mailto:gabriela.bade@hotmail.com" target="_blank" title="Email"><i
+                            class='bx bx-envelope'></i></a>
+                </div>
+
+                <a href="./downloads/curriculo-gabriela-bade.pdf" class="btn" download>Baixar Currículo</a>
             </div>
 
-            <a href="./downloads/curriculo-gabriela-bade.pdf" class="btn" download>Baixar Currículo</a>
-        </div>
+            <div class="profession-container">
+                <div class="profession-box">
+                    <div class="profession" style="--i:1;">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="profession" style="--i:2;">
+                        <i class='bx bx-palette'></i>
+                        <h3>Front End</h3>
+                    </div>
+                    <div class="profession" style="--i:3;">
+                        <i class='bx bx-mobile-alt'></i>
+                        <h3>Web Designer</h3>
+                    </div>
+                    <div class="profession" style="--i:4;">
+                        <i class='bx bx-line-chart'></i>
+                        <h3>Marketing Digital</h3>
+                    </div>
 
-        <div class="profession-container">
-            <div class="profession-box">
-                <div class="profession" style="--i:1;">
+                    <div class="circle"></div>
+                </div>
+
+                <div class="overlay"></div>
+            </div>
+
+            <div class="home-img">
+                <img src="images/home.png" alt="" loading="lazy">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="images/about.png" alt="" loading="lazy">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">Sobre <span>Mim</span></h2>
+                <h3>Desenvolvedora Front-end apaixonada por criar soluções web responsivas e funcionais</h3>
+                <p>
+                    Atuo como desenvolvedora autônoma com experiência na criação de websites e landing pages.
+                    Minha transição de carreira foi impulsionada pelo desejo de enfrentar novos desafios e
+                    contribuir com inovações tecnológicas que impactem positivamente a vida das pessoas.
+                </p>
+                <p>
+                    Com formação em Marketing Digital, agrego ao desenvolvimento de software habilidades
+                    analíticas e uma profunda capacidade de entender o usuário. Essas qualidades são
+                    aplicadas diretamente na programação para criar soluções alinhadas às necessidades
+                    dos clientes.
+                </p>
+                <p>
+                    Sou otimista, perseverante e dedicada, sempre disposta a aprender, evoluir e me adaptar
+                    às mudanças. Valorizo o trabalho em equipe e enxergo o feedback construtivo como uma
+                    ferramenta essencial para meu crescimento pessoal e profissional.
+                </p>
+                <a href="#portfolio" class="btn">Ver Meu Trabalho</a>
+            </div>
+        </section>
+
+        <!-- services section design -->
+        <section class="services" id="services">
+            <h2 class="heading">Meus <span>Serviços</span></h2>
+
+            <div class="services-container">
+
+                <div class="services-box">
                     <i class='bx bx-code-alt'></i>
-                    <h3>Web Developer</h3>
+                    <h3>Desenvolvimento Front-end</h3>
+                    <p>
+                        Desenvolvimento de aplicações web modernas e responsivas utilizando React.js, TypeScript
+                        e outras tecnologias atuais. Foco em criar interfaces intuitivas e funcionais que
+                        proporcionam excelente experiência ao usuário.
+                    </p>
+                    <a href="#portfolio" class="btn">Ver Projetos</a>
                 </div>
-                <div class="profession" style="--i:2;">
-                    <i class='bx bx-palette'></i>
-                    <h3>Front End</h3>
-                </div>
-                <div class="profession" style="--i:3;">
+
+                <div class="services-box">
                     <i class='bx bx-mobile-alt'></i>
-                    <h3>Web Designer</h3>
+                    <h3>Desenvolvimento Mobile</h3>
+                    <p>
+                        Criação de aplicativos móveis utilizando React Native e Expo. Desenvolvimento de
+                        soluções multiplataforma que funcionam tanto em iOS quanto Android, com foco em
+                        performance e usabilidade.
+                    </p>
+                    <a href="#portfolio" class="btn">Ver Projetos</a>
                 </div>
-                <div class="profession" style="--i:4;">
+
+                <div class="services-box">
+                    <i class='bx bx-store'></i>
+                    <h3>Landing Pages</h3>
+                    <p>Desenvolvimento de landing pages otimizadas e responsivas para diversos segmentos.
+                        Integração com redes sociais, formulários de contato e WhatsApp. Design focado em
+                        conversão e experiência do usuário.</p>
+                    <a href="#portfolio" class="btn">Ver Projetos</a>
+                </div>
+
+                <div class="services-box">
                     <i class='bx bx-line-chart'></i>
                     <h3>Marketing Digital</h3>
+                    <p>Estratégias de marketing digital integradas ao desenvolvimento web. Criação de
+                        conteúdo, otimização para SEO e gestão de mídias sociais, aproveitando minha
+                        formação em Marketing Digital.</p>
+                    <a href="#portfolio" class="btn">Ver Projetos</a>
                 </div>
-
-                <div class="circle"></div>
             </div>
+        </section>
 
-            <div class="overlay"></div>
-        </div>
+        <!-- design de seção de portfólio projetos -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Meus <span>Projetos</span></h2>
 
-        <div class="home-img">
-            <img src="images/home.png" alt="">
-        </div>
-    </section>
+            <!-- Projetos Full-stack -->
+            <div class="category-section">
+                <h3 class="category-title">Projetos <span>Full-stack</span></h3>
 
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.png" alt="">
-        </div>
-
-        <div class="about-content">
-            <h2 class="heading">Sobre <span>Mim</span></h2>
-            <h3>Desenvolvedora Front-end apaixonada por criar soluções web responsivas e funcionais</h3>
-            <p>
-                Atuo como desenvolvedora autônoma com experiência na criação de websites e landing pages.
-                Minha transição de carreira foi impulsionada pelo desejo de enfrentar novos desafios e
-                contribuir com inovações tecnológicas que impactem positivamente a vida das pessoas.
-            </p>
-            <p>
-                Com formação em Marketing Digital, agrego ao desenvolvimento de software habilidades
-                analíticas e uma profunda capacidade de entender o usuário. Essas qualidades são
-                aplicadas diretamente na programação para criar soluções alinhadas às necessidades
-                dos clientes.
-            </p>
-            <p>
-                Sou otimista, perseverante e dedicada, sempre disposta a aprender, evoluir e me adaptar
-                às mudanças. Valorizo o trabalho em equipe e enxergo o feedback construtivo como uma
-                ferramenta essencial para meu crescimento pessoal e profissional.
-            </p>
-            <a href="#portfolio" class="btn">Ver Meu Trabalho</a>
-        </div>
-    </section>
-
-    <!-- services section design -->
-    <section class="services" id="services">
-        <h2 class="heading">Meus <span>Serviços</span></h2>
-
-        <div class="services-container">
-
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Desenvolvimento Front-end</h3>
-                <p>
-                    Desenvolvimento de aplicações web modernas e responsivas utilizando React.js, TypeScript
-                    e outras tecnologias atuais. Foco em criar interfaces intuitivas e funcionais que
-                    proporcionam excelente experiência ao usuário.
-                </p>
-                <a href="#portfolio" class="btn">Ver Projetos</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-mobile-alt'></i>
-                <h3>Desenvolvimento Mobile</h3>
-                <p>
-                    Criação de aplicativos móveis utilizando React Native e Expo. Desenvolvimento de
-                    soluções multiplataforma que funcionam tanto em iOS quanto Android, com foco em
-                    performance e usabilidade.
-                </p>
-                <a href="#portfolio" class="btn">Ver Projetos</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-store'></i>
-                <h3>Landing Pages</h3>
-                <p>Desenvolvimento de landing pages otimizadas e responsivas para diversos segmentos.
-                    Integração com redes sociais, formulários de contato e WhatsApp. Design focado em
-                    conversão e experiência do usuário.</p>
-                <a href="#portfolio" class="btn">Ver Projetos</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-line-chart'></i>
-                <h3>Marketing Digital</h3>
-                <p>Estratégias de marketing digital integradas ao desenvolvimento web. Criação de
-                    conteúdo, otimização para SEO e gestão de mídias sociais, aproveitando minha
-                    formação em Marketing Digital.</p>
-                <a href="#portfolio" class="btn">Ver Projetos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- design de seção de portfólio projetos -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Meus <span>Projetos</span></h2>
-
-        <!-- Projetos Full-stack -->
-        <div class="category-section">
-            <h3 class="category-title">Projetos <span>Full-stack</span></h3>
-
-            <div class="portfolio-wrapper">
-                <div class="portfolio-box mySwiper">
-                    <div class="portfolio-content swiper-wrapper">
-                        <!-- CodeBurger -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/codeburger.jpg" alt="CodeBurger">
-                                <div class="portfolio-layer">
-                                    <h4>CodeBurger</h4>
-                                    <p>Sistema completo de pedidos com área do cliente e painel administrativo.
-                                        Integração com PostgreSQL e MongoDB.</p>
-                                    <div class="tech-stack">
-                                        <span>JavaScript</span>
-                                        <span>React.js</span>
-                                        <span>Node.js</span>
-                                        <span>PostgreSQL</span>
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-box mySwiper portfolio-carousel">
+                        <div class="portfolio-content swiper-wrapper">
+                            <!-- CodeBurger -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/codeburger.jpg" alt="CodeBurger" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>CodeBurger</h4>
+                                        <p>Sistema completo de pedidos com área do cliente e painel administrativo.
+                                            Integração com PostgreSQL e MongoDB.</p>
+                                        <div class="tech-stack">
+                                            <span>JavaScript</span>
+                                            <span>React.js</span>
+                                            <span>Node.js</span>
+                                            <span>PostgreSQL</span>
+                                        </div>
+                                        <a href="https://github.com/gabrielabade/codeburger-frontend" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
                                     </div>
-                                    <a href="https://github.com/gabrielabade/codeburger-frontend" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- DevBills -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/devbills.jpg" alt="DevBills" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>DevBills</h4>
+                                        <p>Dashboard financeiro com controle de gastos, filtros por período e
+                                            categorias.
+                                            Frontend em React com TypeScript e backend com MongoDB.</p>
+                                        <div class="tech-stack">
+                                            <span>React</span>
+                                            <span>TypeScript</span>
+                                            <span>Styled Components</span>
+                                            <span>MongoDB</span>
+                                        </div>
+                                        <a href="https://github.com/gabrielabade/devbills-front" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- DevBurger -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/devburger.jpg" alt="DevBurger" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>DevBurger</h4>
+                                        <p>Sistema de pedidos de hambúrgueres, com funcionalidades de cadastro, login e
+                                            carrinho
+                                            de compras.</p>
+                                        <div class="tech-stack">
+                                            <span>JavaScript</span>
+                                            <span>React.js</span>
+                                            <span>Node.js</span>
+                                            <span>Styled-components</span>
+                                        </div>
+                                        <a href="https://github.com/gabrielabade/devburger-interface" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BeefKing -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/beefking.jpg" alt="BeefKing - Burger Restaurant" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>BeefKing - Burger Restaurant</h4>
+                                        <p>Página para cadastro de usuários e pedidos em um restaurante fictício, com
+                                            backend e
+                                            frontend integrados.</p>
+                                        <div class="tech-stack">
+                                            <span>React.js</span>
+                                            <span>Node.js</span>
+                                            <span>Styled-components</span>
+                                            <span>Axios</span>
+                                        </div>
+                                        <a href="https://github.com/gabrielabade/user-registration-and-order-page"
+                                            target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Primeiro Projeto Fullstack -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/first-project-fullstack.jpg" alt="Primeiro Projeto Fullstack" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Primeiro Projeto Fullstack</h4>
+                                        <p>Sistema de cadastro com backend em Node.js e frontend em React, incluindo
+                                            funcionalidades
+                                            completas de CRUD.</p>
+                                        <div class="tech-stack">
+                                            <span>React</span>
+                                            <span>Node.js</span>
+                                            <span>Express</span>
+                                            <span>Axios</span>
+                                        </div>
+                                        <a href="https://github.com/gabrielabade/first-project-fullstack"
+                                            target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projetos Front-end (React) -->
+            <div class="category-section">
+                <h3 class="category-title">Projetos <span>React</span></h3>
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-box mySwiper portfolio-carousel">
+                        <div class="portfolio-content swiper-wrapper">
+                            <!-- Space Flight News -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/space-flight.jpg" alt="Space Flight News" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Space Flight News</h4>
+                                        <p>Landing page em React para exibição de notícias sobre tecnologia espacial.
+                                            Design limpo e responsivo com listagem dinâmica de conteúdo.</p>
+                                        <div class="tech-stack">
+                                            <span>React.js</span>
+                                            <span>JavaScript</span>
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                        </div>
+                                        <a href="https://github.com/gabrielabade/space-flight-news" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NearBy App -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/nearby-app.jpg" alt="NearBy App" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>NearBy App</h4>
+                                        <p>Aplicativo mobile em React Native para cupons de desconto baseados em
+                                            localização.
+                                            Recursos de geolocalização, QR Code e mapas interativos.</p>
+                                        <div class="tech-stack">
+                                            <span>React Native</span>
+                                            <span>Expo</span>
+                                            <span>TypeScript</span>
+                                        </div>
+                                        <a href="https://github.com/gabrielabade/nearby" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- DevBills -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/devbills.jpg" alt="DevBills">
-                                <div class="portfolio-layer">
-                                    <h4>DevBills</h4>
-                                    <p>Dashboard financeiro com controle de gastos, filtros por período e categorias.
-                                        Frontend em React com TypeScript e backend com MongoDB.</p>
-                                    <div class="tech-stack">
-                                        <span>React</span>
-                                        <span>TypeScript</span>
-                                        <span>Styled Components</span>
-                                        <span>MongoDB</span>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Landing Pages & Websites -->
+            <div class="category-section">
+                <h3 class="category-title">Landing Pages & <span>Websites</span></h3>
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-box mySwiper portfolio-carousel">
+                        <div class="portfolio-content swiper-wrapper">
+                            <!-- Floricultura -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/floricultura.jpg" alt="Floricultura" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Floricultura Bloom</h4>
+                                        <p>Site interativo para explorar produtos, depoimentos e localização de uma
+                                            floricultura, com
+                                            mapa
+                                            integrado.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/floricultura/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
                                     </div>
-                                    <a href="https://github.com/gabrielabade/devbills-front" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- DevBurger -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/devburger.jpg" alt="DevBurger">
-                                <div class="portfolio-layer">
-                                    <h4>DevBurger</h4>
-                                    <p>Sistema de pedidos de hambúrgueres, com funcionalidades de cadastro, login e
-                                        carrinho
-                                        de compras.</p>
-                                    <div class="tech-stack">
-                                        <span>JavaScript</span>
-                                        <span>React.js</span>
-                                        <span>Node.js</span>
-                                        <span>Styled-components</span>
+                            <!-- Ciclista -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/ciclista-tio-pinguinho.jpg" alt="Loja de Bicicletas" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Ciclista</h4>
+                                        <p>Página interativa que apresenta serviços, formulário para orçamento,
+                                            informações
+                                            sobre a
+                                            empresa
+                                            e um catálogo dinâmico dos principais modelos de bicicletas.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://ciclistatiopinguinho.netlify.app/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
                                     </div>
-                                    <a href="https://github.com/gabrielabade/devburger-interface" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- BeefKing -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/beefking.jpg" alt="BeefKing - Burger Restaurant">
-                                <div class="portfolio-layer">
-                                    <h4>BeefKing - Burger Restaurant</h4>
-                                    <p>Página para cadastro de usuários e pedidos em um restaurante fictício, com
-                                        backend e
-                                        frontend integrados.</p>
-                                    <div class="tech-stack">
-                                        <span>React.js</span>
-                                        <span>Node.js</span>
-                                        <span>Styled-components</span>
-                                        <span>Axios</span>
+                            <!-- Studio Dani Bade -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/studio-dani-bade.jpg" alt="Studio Dani Bade" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Studio Dani Bade</h4>
+                                        <p>Site para apresentação de serviços estéticos, com agendamento fácil e
+                                            integração
+                                            com WhatsApp.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/studio-dani-bade/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
                                     </div>
-                                    <a href="https://github.com/gabrielabade/user-registration-and-order-page"
-                                        target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Primeiro Projeto Fullstack -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/first-project-fullstack.jpg" alt="Primeiro Projeto Fullstack">
-                                <div class="portfolio-layer">
-                                    <h4>Primeiro Projeto Fullstack</h4>
-                                    <p>Sistema de cadastro com backend em Node.js e frontend em React, incluindo
-                                        funcionalidades
-                                        completas de CRUD.</p>
-                                    <div class="tech-stack">
-                                        <span>React</span>
-                                        <span>Node.js</span>
-                                        <span>Express</span>
-                                        <span>Axios</span>
+                            <!-- Personal Trainer -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/personal-trainer.jpg" alt="Personal Trainer" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Personal Trainer</h4>
+                                        <p>Landing page responsiva para consultoria online, com formulário de contato e
+                                            integração com WhatsApp.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/personal-trainer/index.html"
+                                            target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
                                     </div>
-                                    <a href="https://github.com/gabrielabade/first-project-fullstack" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
                                 </div>
                             </div>
-                        </div>
 
+                            <!-- Lift Detox -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/lift-detox.jpg" alt="Lift Detox Black" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Lift Detox Black</h4>
+                                        <p>Página de produto com design responsivo e alternância entre modos claro e
+                                            escuro,
+                                            com
+                                            links
+                                            para
+                                            compra e contato.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/lift-detox-card/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cafeteria -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/cafeteria.jpg" alt="Cafeteria" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Cafeteria</h4>
+                                        <p>O Dev Café é um site criado para representar uma cafeteria moderna, com
+                                            design
+                                            responsivo e
+                                            funcionalidades interativas.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/cafeteria/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Landing Pages ciclista -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/ciclista.jpg" alt="Loja de Bicicletas" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Loja de Bicicletas</h4>
+                                        <p>Página interativa que apresenta serviços, marcas e um formulário para
+                                            orçamento,
+                                            com
+                                            design
+                                            responsivo e mapa integrado.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/ciclista/#" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Currículo -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/curriculo.jpg" alt="Currículo" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Currículo</h4>
+                                        <p>Página interativa para exibição de currículo, com design responsivo e
+                                            navegação
+                                            suave
+                                            entre seções.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/curriculum/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Business Card -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/business-card.jpg" alt="Business Card" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Business Card</h4>
+                                        <p>Agregador de links online, funcionando como um cartão de visitas digital com
+                                            informações e
+                                            contatos rápidos.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/business-card/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Encanadores Mario & Luigi -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/mario-luigi.jpg" alt="Encanadores Mario & Luigi" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Encanadores Mario & Luigi</h4>
+                                        <p>Site fictício para apresentação de serviços de encanamento, com formulário de
+                                            contato
+                                            interativo.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/mario-encanador/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Landing Pages we form -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/weform.jpg" alt="WeForm" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>WeForm</h4>
+                                        <p>Landing page inovadora que conecta entidades e parceiros, facilitando
+                                            cadastro e
+                                            organização de informações.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/weform/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- Fim da swiper-wrapper -->
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div> <!-- Fim da seção Landing Pages & Websites -->
+
+            <!-- Aplicações Web Interativas -->
+            <div class="category-section">
+                <h3 class="category-title">Aplicações Web <span>Interativas</span></h3>
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-box mySwiper portfolio-carousel">
+                        <div class="portfolio-content swiper-wrapper">
+                            <!-- To Do List -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/todo-list.jpg" alt="To Do List" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>To Do List</h4>
+                                        <p>Aplicação de gerenciamento de tarefas com prioridades, tema claro/escuro e
+                                            persistência local de dados.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML5</span>
+                                            <span>CSS3</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/to-do-list/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conversor de Moedas -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/conversor-moedas.jpg" alt="Conversor de Moedas" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Conversor de Moedas</h4>
+                                        <p>Site para conversão de moedas, incluindo dólar, euro e bitcoin, utilizando
+                                            cotações dinâmicas via API.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/currency_converter/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- JokenPô -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/jokenpo.jpg" alt="JokenPô" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>JokenPô</h4>
+                                        <p>Jogo de Pedra, Papel e Tesoura com tema do Mario, onde o jogador compete
+                                            contra
+                                            escolhas aleatórias do computador.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/pedra_papel_tesoura/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sorteador de Números -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/sorteio.jpg" alt="Sorteador de números" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Sorteador de Números</h4>
+                                        <p>Página web interativa que permite sortear números aleatórios em um intervalo
+                                            definido, com validações para entrada segura.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/sorteio/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cronômetro -->
+                            <div class="swiper-slide">
+                                <div class="portfolio-item">
+                                    <img src="images/cronometro.jpg" alt="Cronômetro" loading="lazy">
+                                    <div class="portfolio-layer">
+                                        <h4>Cronômetro</h4>
+                                        <p>Cronômetro simples desenvolvido com JavaScript, utilizando setInterval e
+                                            clearInterval para controle de tempo.</p>
+                                        <div class="tech-stack">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <a href="https://gabrielabade.github.io/stopwatch/" target="_blank">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- Fim da swiper-wrapper -->
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div> <!-- Fim da seção Aplicações Web Interativas -->
+
+        </section>
+
+        <!-- design de depoimento -->
+        <section class="testimonial-container">
+            <h2 class="heading">Depoimentos <span>Valiosos</span></h2>
+
+            <div class="testimonial-wrapper">
+                <div class="testimonial-box mySwiper">
+                    <div class="testimonial-content swiper-wrapper">
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/testimonial1.jpg" alt="" loading="lazy">
+                            <h3>João <span><small>- Loja de Bicicletas</small></span></h3>
+                            <p>
+                                "Contratei o serviço para criar o site da minha loja, e o resultado superou minhas
+                                expectativas! Agora tenho um site completo com formulário para orçamentos, apresentação
+                                da
+                                empresa e um catálogo dinâmico dos principais produtos, com encaminhamento direto para o
+                                WhatsApp. Além disso, minha loja foi colocada no Google com aumento significativo de
+                                cliques
+                                e recebi um suporte incrível para as redes sociais, com posts e stories personalizados.
+                                Fiquei extremamente satisfeito!"
+                            </p>
+                        </div>
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/testimonial2.jpg" alt="" loading="lazy">
+                            <h3>Daniela <span><small>- Salão de Beleza</small></span></h3>
+                            <p>
+                                "Estou muito feliz com o site do meu salão! Ele apresenta todos os serviços de forma
+                                profissional e ainda conta com a funcionalidade de agendamento direto pelo WhatsApp.
+                                Minha
+                                presença no Google foi configurada, e ainda recebi um suporte completo nas redes
+                                sociais,
+                                com posts, stories, capas para destaques e descrições incríveis. Tudo ficou exatamente
+                                como
+                                eu queria!"
+                            </p>
+                        </div>
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/testimonial3.jpg" alt="" loading="lazy">
+                            <h3>Alessandra <span><small>- Representante Lift Detox</small></span></h3>
+                            <p>
+                                "Preciso dizer que estou encantada com o trabalho! Solicitei criação da minha logo,
+                                capas para destaques
+                                e uma página de apresentação do meu produto que ficou incrível. A página tem links
+                                diretos
+                                para compra e redes sociais, o que facilitou muito para os meus clientes. Recomendo
+                                demais!"
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="swiper-pagination"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Projetos Front-end (React) -->
-        <div class="category-section">
-            <h3 class="category-title">Projetos <span>React</span></h3>
-            <div class="portfolio-wrapper">
-                <div class="portfolio-box mySwiper">
-                    <div class="portfolio-content swiper-wrapper">
-                        <!-- Space Flight News -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/space-flight.jpg" alt="Space Flight News">
-                                <div class="portfolio-layer">
-                                    <h4>Space Flight News</h4>
-                                    <p>Landing page em React para exibição de notícias sobre tecnologia espacial.
-                                        Design limpo e responsivo com listagem dinâmica de conteúdo.</p>
-                                    <div class="tech-stack">
-                                        <span>React.js</span>
-                                        <span>JavaScript</span>
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                    </div>
-                                    <a href="https://github.com/gabrielabade/space-flight-news" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- NearBy App -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/nearby-app.jpg" alt="NearBy App">
-                                <div class="portfolio-layer">
-                                    <h4>NearBy App</h4>
-                                    <p>Aplicativo mobile em React Native para cupons de desconto baseados em
-                                        localização.
-                                        Recursos de geolocalização, QR Code e mapas interativos.</p>
-                                    <div class="tech-stack">
-                                        <span>React Native</span>
-                                        <span>Expo</span>
-                                        <span>TypeScript</span>
-                                    </div>
-                                    <a href="https://github.com/gabrielabade/nearby" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Landing Pages & Websites -->
-        <div class="category-section">
-            <h3 class="category-title">Landing Pages & <span>Websites</span></h3>
-            <div class="portfolio-wrapper">
-                <div class="portfolio-box mySwiper">
-                    <div class="portfolio-content swiper-wrapper">
-                        <!-- Floricultura -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/floricultura.jpg" alt="Floricultura">
-                                <div class="portfolio-layer">
-                                    <h4>Floricultura Bloom</h4>
-                                    <p>Site interativo para explorar produtos, depoimentos e localização de uma
-                                        floricultura, com
-                                        mapa
-                                        integrado.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/floricultura/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Design da seção de contato -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Entre em <span>Contato!</span></h2>
 
-                        <!-- Ciclista -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/ciclista-tio-pinguinho.jpg" alt="Loja de Bicicletas">
-                                <div class="portfolio-layer">
-                                    <h4>Ciclista</h4>
-                                    <p>Página interativa que apresenta serviços, formulário para orçamento, informações
-                                        sobre a
-                                        empresa
-                                        e um catálogo dinâmico dos principais modelos de bicicletas.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://ciclistatiopinguinho.netlify.app/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Studio Dani Bade -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/studio-dani-bade.jpg" alt="Studio Dani Bade">
-                                <div class="portfolio-layer">
-                                    <h4>Studio Dani Bade</h4>
-                                    <p>Site para apresentação de serviços estéticos, com agendamento fácil e integração
-                                        com WhatsApp.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/studio-dani-bade/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Personal Trainer -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/personal-trainer.jpg" alt="Personal Trainer">
-                                <div class="portfolio-layer">
-                                    <h4>Personal Trainer</h4>
-                                    <p>Landing page responsiva para consultoria online, com formulário de contato e
-                                        integração com WhatsApp.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/personal-trainer/index.html"
-                                        target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Lift Detox -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/lift-detox.jpg" alt="Lift Detox Black">
-                                <div class="portfolio-layer">
-                                    <h4>Lift Detox Black</h4>
-                                    <p>Página de produto com design responsivo e alternância entre modos claro e escuro,
-                                        com
-                                        links
-                                        para
-                                        compra e contato.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/lift-detox-card/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Cafeteria -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/cafeteria.jpg" alt="Cafeteria">
-                                <div class="portfolio-layer">
-                                    <h4>Cafeteria</h4>
-                                    <p>O Dev Café é um site criado para representar uma cafeteria moderna, com design
-                                        responsivo e
-                                        funcionalidades interativas.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/cafeteria/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Landing Pages ciclista -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/ciclista.jpg" alt="Loja de Bicicletas">
-                                <div class="portfolio-layer">
-                                    <h4>Loja de Bicicletas</h4>
-                                    <p>Página interativa que apresenta serviços, marcas e um formulário para orçamento,
-                                        com
-                                        design
-                                        responsivo e mapa integrado.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/ciclista/#" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Currículo -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/curriculo.jpg" alt="Currículo">
-                                <div class="portfolio-layer">
-                                    <h4>Currículo</h4>
-                                    <p>Página interativa para exibição de currículo, com design responsivo e navegação
-                                        suave
-                                        entre seções.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/curriculum/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Business Card -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/business-card.jpg" alt="Business Card">
-                                <div class="portfolio-layer">
-                                    <h4>Business Card</h4>
-                                    <p>Agregador de links online, funcionando como um cartão de visitas digital com
-                                        informações e
-                                        contatos rápidos.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/business-card/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Encanadores Mario & Luigi -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/mario-luigi.jpg" alt="Encanadores Mario & Luigi">
-                                <div class="portfolio-layer">
-                                    <h4>Encanadores Mario & Luigi</h4>
-                                    <p>Site fictício para apresentação de serviços de encanamento, com formulário de
-                                        contato
-                                        interativo.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/mario-encanador/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Landing Pages we form -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/weform.jpg" alt="WeForm">
-                                <div class="portfolio-layer">
-                                    <h4>WeForm</h4>
-                                    <p>Landing page inovadora que conecta entidades e parceiros, facilitando cadastro e
-                                        organização de informações.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/weform/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> <!-- Fim da swiper-wrapper -->
-
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+            <form id="contactForm">
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Nome completo" required>
+                    <input type="email" id="email" placeholder="Endereço de email" required>
                 </div>
-            </div>
-        </div> <!-- Fim da seção Landing Pages & Websites -->
-
-        <!-- Aplicações Web Interativas -->
-        <div class="category-section">
-            <h3 class="category-title">Aplicações Web <span>Interativas</span></h3>
-            <div class="portfolio-wrapper">
-                <div class="portfolio-box mySwiper">
-                    <div class="portfolio-content swiper-wrapper">
-                        <!-- To Do List -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/todo-list.jpg" alt="To Do List">
-                                <div class="portfolio-layer">
-                                    <h4>To Do List</h4>
-                                    <p>Aplicação de gerenciamento de tarefas com prioridades, tema claro/escuro e
-                                        persistência local de dados.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML5</span>
-                                        <span>CSS3</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/to-do-list/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Conversor de Moedas -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/conversor-moedas.jpg" alt="Conversor de Moedas">
-                                <div class="portfolio-layer">
-                                    <h4>Conversor de Moedas</h4>
-                                    <p>Site para conversão de moedas, incluindo dólar, euro e bitcoin, utilizando
-                                        cotações dinâmicas via API.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/currency_converter/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- JokenPô -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/jokenpo.jpg" alt="JokenPô">
-                                <div class="portfolio-layer">
-                                    <h4>JokenPô</h4>
-                                    <p>Jogo de Pedra, Papel e Tesoura com tema do Mario, onde o jogador compete contra
-                                        escolhas aleatórias do computador.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/pedra_papel_tesoura/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Sorteador de Números -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/sorteio.jpg" alt="Sorteador de números">
-                                <div class="portfolio-layer">
-                                    <h4>Sorteador de Números</h4>
-                                    <p>Página web interativa que permite sortear números aleatórios em um intervalo
-                                        definido, com validações para entrada segura.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/sorteio/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Cronômetro -->
-                        <div class="swiper-slide">
-                            <div class="portfolio-item">
-                                <img src="images/cronometro.jpg" alt="Cronômetro">
-                                <div class="portfolio-layer">
-                                    <h4>Cronômetro</h4>
-                                    <p>Cronômetro simples desenvolvido com JavaScript, utilizando setInterval e
-                                        clearInterval para controle de tempo.</p>
-                                    <div class="tech-stack">
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <a href="https://gabrielabade.github.io/stopwatch/" target="_blank">
-                                        <i class='bx bx-link-external'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> <!-- Fim da swiper-wrapper -->
-
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                <div class="input-box">
+                    <input type="tel" id="phone" placeholder="Número de WhatsApp" required>
+                    <input type="text" id="subject" placeholder="Assunto" required>
                 </div>
+                <textarea id="message" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+                <button type="button" class="btn" onclick="sendToWhatsApp()">Enviar Mensagem</button>
+            </form>
+        </section>
+
+
+        <!-- design de rodapé -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>© 2025 Gabriela Bade. Todos os direitos reservados.</p>
             </div>
-        </div> <!-- Fim da seção Aplicações Web Interativas -->
 
-    </section>
-
-    <!-- design de depoimento -->
-    <div class="testimonial-container">
-        <h2 class="heading">Depoimentos <span>Valiosos</span></h2>
-
-        <div class="testimonial-wrapper">
-            <div class="testimonial-box mySwiper">
-                <div class="testimonial-content swiper-wrapper">
-                    <div class="testimonial-slide swiper-slide">
-                        <img src="images/testimonial1.jpg" alt="">
-                        <h3>João <span><small>- Loja de Bicicletas</small></span></h3>
-                        <p>
-                            "Contratei o serviço para criar o site da minha loja, e o resultado superou minhas
-                            expectativas! Agora tenho um site completo com formulário para orçamentos, apresentação da
-                            empresa e um catálogo dinâmico dos principais produtos, com encaminhamento direto para o
-                            WhatsApp. Além disso, minha loja foi colocada no Google com aumento significativo de cliques
-                            e recebi um suporte incrível para as redes sociais, com posts e stories personalizados.
-                            Fiquei extremamente satisfeito!"
-                        </p>
-                    </div>
-                    <div class="testimonial-slide swiper-slide">
-                        <img src="images/testimonial2.jpg" alt="">
-                        <h3>Daniela <span><small>- Salão de Beleza</small></span></h3>
-                        <p>
-                            "Estou muito feliz com o site do meu salão! Ele apresenta todos os serviços de forma
-                            profissional e ainda conta com a funcionalidade de agendamento direto pelo WhatsApp. Minha
-                            presença no Google foi configurada, e ainda recebi um suporte completo nas redes sociais,
-                            com posts, stories, capas para destaques e descrições incríveis. Tudo ficou exatamente como
-                            eu queria!"
-                        </p>
-                    </div>
-                    <div class="testimonial-slide swiper-slide">
-                        <img src="images/testimonial3.jpg" alt="">
-                        <h3>Alessandra <span><small>- Representante Lift Detox</small></span></h3>
-                        <p>
-                        <p>
-                            "Preciso dizer que estou encantada com o trabalho! Solicitei criação da minha logo, capas para destaques
-                            e uma página de apresentação do meu produto que ficou incrível. A página tem links diretos
-                            para compra e redes sociais, o que facilitou muito para os meus clientes. Recomendo demais!"
-                        </p>
-                    </div>
-                </div>
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
             </div>
-        </div>
-    </div>
+        </footer>
 
-    <!-- Design da seção de contato -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Entre em <span>Contato!</span></h2>
-
-        <form id="contactForm">
-            <div class="input-box">
-                <input type="text" id="name" placeholder="Nome completo" required>
-                <input type="email" id="email" placeholder="Endereço de email" required>
-            </div>
-            <div class="input-box">
-                <input type="tel" id="phone" placeholder="Número de WhatsApp" required>
-                <input type="text" id="subject" placeholder="Assunto" required>
-            </div>
-            <textarea id="message" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
-            <button type="button" class="btn" onclick="sendToWhatsApp()">Enviar Mensagem</button>
-        </form>
-    </section>
-
-    <!-- design de rodapé -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>© 2025 Gabriela Bade. Todos os direitos reservados.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>
+        <!-- Carregando o JavaScript no final para melhorar o desempenho -->
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- custom js -->
+        <script src="js/script.js"></script>
+    </main>
 </body>
-
 </html>

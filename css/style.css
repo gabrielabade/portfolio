@@ -431,8 +431,10 @@ span {
 }
 
 .swiper-slide {
-    display: flex;
-    justify-content: center;
+    width: auto;
+    /* Allow the slides to grow/shrink based on container */
+    flex-shrink: 0;
+    /* Prevent shrinking */
 }
 
 .portfolio-box img {
@@ -516,7 +518,7 @@ span {
 }
 
 .portfolio-item:hover .portfolio-layer {
-    display: block;
+    display: flex;
     opacity: 1;
 }
 
@@ -627,21 +629,48 @@ span {
     transform: scale(1.1);
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--main-color);
-    width: 50px;
-    height: 50px;
+.portfolio-carousel .swiper-button-next,
+.portfolio-carousel .swiper-button-prev {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+    position: absolute;
     top: 50%;
+    /* Centraliza verticalmente */
     transform: translateY(-50%);
-    padding: 10px;
+    /* Ajusta alinhamento */
     z-index: 10;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    top: 50%;
-    transform: translateY(-50%);
+.portfolio-carousel .swiper-button-next {
+    right: -20px;
+    /* Distância à direita */
+}
+
+.portfolio-carousel .swiper-button-prev {
+    left: -20px;
+    /* Distância à esquerda */
+}
+
+.portfolio-carousel .swiper-button-next:active,
+.portfolio-carousel .swiper-button-prev:active {
+    background-color: darken(var(--main-color), 25%);
+    /* Cor mais escura ao clicar */
+    opacity: 1;
+    /* Garante que o botão fique visível */
+}
+
+/* Garantindo que os slides fiquem centralizados */
+.portfolio-carousel .swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Ensure slides are not wrapping */
 }
 
 .swiper-pagination-bullet {
@@ -650,7 +679,20 @@ span {
 }
 
 .swiper-pagination-bullet-active {
-    background: var(ma);
+    background: var(--main-color);
+}
+
+.portfolio-item .portfolio-layer {
+    display: none;
+    /* Oculta inicialmente */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-layer {
+    display: flex;
+    /* Exibe apenas no item com hover */
+    opacity: 1;
 }
 
 .testimonial-container {
@@ -1143,67 +1185,57 @@ img {
         /* MOstra as setas no desktop */
     }
 
-    .swiper-pagination {
+    .portfolio-carousel .swiper-pagination {
         display: none;
         /* Oculta a paginação no desktop */
     }
 }
 
+/* Mobile Styles */
 @media (max-width: 767px) {
     .portfolio-item {
-        width: 100%;
-        /* Aumenta a largura no mobile */
-        height: auto;
-        /* Permite altura automática para manter a proporção */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
         margin: 0 auto;
-        /* Centraliza o item */
     }
 
     .portfolio-item img {
         width: 100%;
-        /* Garante que a imagem ocupe toda a largura do item */
-        height: auto;
-        /* Mantém a proporção da imagem */
-        object-fit: cover;
-        /* Ajusta o preenchimento da imagem se necessário */
-    }
-
-    .portfolio-item {
-        margin: 10px 0;
     }
 
     .portfolio-wrapper {
-        padding: 0 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5%;
     }
 
     .portfolio-box.mySwiper {
-        padding: 1px 0;
+        width: 100%;
+        padding: 0;
     }
 
     .swiper-button-next,
     .swiper-button-prev {
-        color: var(--main-color);
-        width: 40px;
-        /* ajuste o tamanho das setas */
-        height: 40px;
-        /* ajuste o tamanho das setas */
+        position: absolute;
         top: 50%;
-        /* centraliza verticalmente */
         transform: translateY(-50%);
         z-index: 10;
-        /* garante que as setas fiquem acima do conteúdo */
+        background: none;
+        border: none;
+        color: #fff;
     }
 
     .swiper-button-next {
-        right: 5%;
-        /* ajuste a posição das setas */
+        right: 1%;
     }
 
     .swiper-button-prev {
-        left: 5%;
-        /* ajuste a posição das setas */
+        left: 1%;
     }
-
 
     .swiper-pagination {
         position: absolute;
@@ -1225,5 +1257,4 @@ img {
     .swiper-pagination-bullet-active {
         background: var(--main-color);
     }
-
 }

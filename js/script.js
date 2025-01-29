@@ -104,31 +104,45 @@ Mensagem: ${message}`;
     // Redirecionar para o WhatsApp com a mensagem
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
 }
+
 /* ==== carrossel para cada categoria de projetos ====*/
 const projectSwipers = document.querySelectorAll('.portfolio-box.mySwiper');
 
+// Inicializa os carrosséis
 projectSwipers.forEach(swiperContainer => {
+    const pagination = swiperContainer.querySelector('.swiper-pagination');
+    const nextButton = swiperContainer.querySelector('.swiper-button-next');
+    const prevButton = swiperContainer.querySelector('.swiper-button-prev');
+
+    // Garante a configuração correta com base na quantidade de slides
+    const slideCount = swiperContainer.querySelectorAll('.swiper-slide').length;
+
     new Swiper(swiperContainer, {
-        slidesPerView: 1,
+        slidesPerView: slideCount > 1 ? 1 : slideCount, // Exibe no mínimo 1 slide
         spaceBetween: 20,
-        loop: true,
+        loop: slideCount > 2, // Apenas ativa o loop se houver mais de 1 slide
+        grabCursor: true,
         pagination: {
-            el: swiperContainer.querySelector('.swiper-pagination'),
-            clickable: true
+            el: pagination,
+            clickable: true,
         },
         navigation: {
-            nextEl: swiperContainer.querySelector('.swiper-button-next'),
-            prevEl: swiperContainer.querySelector('.swiper-button-prev')
+            nextEl: nextButton,
+            prevEl: prevButton,
         },
         breakpoints: {
             768: {
                 slidesPerView: 1,
-                spaceBetween: 20
+                spaceBetween: 20,
             },
             1024: {
                 slidesPerView: 3,
-                spaceBetween: 30
-            }
-        }
+                spaceBetween: 30,
+            },
+        },
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 2,
+        },
     });
 });
