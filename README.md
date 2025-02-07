@@ -24,9 +24,8 @@ Este é o meu portfólio pessoal desenvolvido com **HTML, CSS e JavaScript**. El
 
 ---
 ## Pré-visualização
-![Pré-visualização do Cartão de Visita](assets/preview.png)
+![Pré-visualização do Cartão de Visita](images/preview.png)
 
----
 
 ## Contato
 E-mail: [gabriela.bade@hotmail.com](mailto:gabriela.bade@hotmail.com)
@@ -38,4 +37,8 @@ LinkedIn: [gabriela-bade](https://linkedin.com/in/gabriela-bade)
 GitHub: [gabrielabade](https://github.com/gabrielabade)
 
 ---
+![Pré-visualização do Cartão de Visita](images/preview2.png)
+
+---
+
 
